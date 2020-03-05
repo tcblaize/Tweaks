@@ -1,9 +1,11 @@
+<?php
 /** 
  * Code goes in theme functions.php
  * Works with WooCommerce Bookings plugin
  * Creates a WooCommerce Order and a Booking to match
  * Data gotten from submitting a POST form
  * This is for a single item, for multiple cart items, move "create_wc_booking" into the get->items() loop and apply $order_item_id
+ * You can also implement this inside of a custom template to take advantage of the create_wc_booking() function
  */
 
 add_action('init', 'ta_WC_booking');
